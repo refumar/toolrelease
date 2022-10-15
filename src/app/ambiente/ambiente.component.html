@@ -1,0 +1,27 @@
+<h1>Ambienti Disponibili</h1>
+
+<table id="ambienti" border="1">
+  <caption>Elenco Ambienti</caption>
+  <thead>
+    <tr>
+      <th>Progressivo</th>
+      <th>Nome Prototto</th>
+      <th>Tipo</th>
+      <th>Descrizione</th>
+      <th>Utente</th>
+      <th>Data</th>
+      <th>Attivo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ambiente of ambienti">
+      <td>{{ambiente.pg}}</td>
+      <td>{{ambiente.prodotto}}</td>
+      <td>{{ambiente.tipo}}</td>
+      <td>{{ambiente.descrizione}}</td>
+      <td>{{ambiente.utente_crea}}</td>
+      <td>{{ambiente.data_crea | date: 'dd-MM-YYYY'}}</td>
+      <td>{{ambiente.attivo}}</td>
+    </tr>
+  </tbody>
+</table>
