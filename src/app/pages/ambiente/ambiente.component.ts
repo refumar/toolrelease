@@ -1,4 +1,4 @@
-import { IAmbiente } from './../models/ambiente';
+import { IAmbiente } from './../../models/ambiente';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

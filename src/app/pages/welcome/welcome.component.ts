@@ -9,6 +9,9 @@ import { ActivatedRoute } from '@angular/router';
 export class WelcomeComponent implements OnInit {
 
   utente: string = "";
+  titolo: string ="Benvenuti nel Tool Release";
+  sottotitolo: string ="Visualizza le release";
+
 
   constructor(private route: ActivatedRoute) { }
 

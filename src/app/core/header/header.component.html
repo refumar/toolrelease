@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Tool Release</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/welcome">
+          <span class="material-icons md-home" title="welcome" aria-hidden="true"></span>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="Ambienti" routerLink="/ambienti">
+          <span class="material-icons md-apartment" title="ambienti" aria-hidden="true"></span>Ambienti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="Rilasci" routerLink="/rilasci">
+          <span class="material-icons md-new_releases" title="rilasci" aria-hidden="true"></span>Rilasci</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="Revisioni" routerLink="/revisioni">
+          <span class="material-icons md-preview" title="revisioni" aria-hidden="true"></span>Revisioni</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" title="Branch" routerLink="/branch">
+          <span class="material-icons md-library_add_check" title="branch" aria-hidden="true"></span>Branch</a>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Cerca</button>
+      </form>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle thumbnail dduser" data-bs-toggle="dropdown" aria-expanded="false">
+          <img class="img-circle" src="/assets/images/user.png" width="38" height="38">
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Accedi</a></li>
+          <li><a class="dropdown-item" href="#">Registrati</a></li>
+          <li><a class="dropdown-item" href="#">Disabilita</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" *ngIf="BasicAuth.isLogged()" routerLink="/logout">Logout {{BasicAuth.loggedUser()}}</a></li>
+          <li><a class="dropdown-item disabled" *ngIf="!BasicAuth.isLogged()" routerLink="/logout">Logout</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</nav>
