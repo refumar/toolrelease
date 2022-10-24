@@ -11,6 +11,7 @@ import { ErrorComponent } from './pages/error/error.component';
 import { AmbienteComponent } from './pages/ambiente/ambiente.component';
 import { LogoutComponent } from './pages/logout/logout.component';
 import { GridAmbientiComponent } from './pages/grid-ambienti/grid-ambienti.component';
+import { AmbienteCardComponent } from './components/ambiente-card/ambiente-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GridAmbientiComponent } from './pages/grid-ambienti/grid-ambienti.compo
     ErrorComponent,
     AmbienteComponent,
     LogoutComponent,
-    GridAmbientiComponent
+    GridAmbientiComponent,
+    AmbienteCardComponent
   ],
   imports: [
     BrowserModule,

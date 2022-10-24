@@ -1,0 +1,21 @@
+<div class="col">
+  <div class="card card-product-grid">
+    <div class="info-wrap">
+      <a class="title text-truncate">{{ambiente.descrizione}}</a>
+      <br>
+      <div>Progressivo: {{ambiente.pg}}</div>
+      <div>Prodotto: {{ambiente.prodotto}}</div>
+      <div>Tipo: {{ambiente.tipo}}</div>
+      <div>Tipo: {{ambiente.tipo}}</div>
+      <div>Attivo: {{ambiente.attivo}}</div>
+      <br>
+
+      <button class="btn btn-sm btn-light" (click)="editArt()">
+          <i class="material-icons md-edit"></i>Modifica
+      </button>
+      <button class="btn btn-sm btn-outline-danger" (click)="delArt()">
+          <i class="material-icons md-delete_forever"></i>Elimina
+      </button>
+    </div>
+  </div> <!-- card-product  end// -->
+</div> <!-- col.// -->
